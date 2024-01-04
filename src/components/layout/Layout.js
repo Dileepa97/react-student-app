@@ -9,7 +9,7 @@ function layout() {
       <div className="menubar-area">
         <MenuBar />
       </div>
-      <div>
+      <div className="page-area">
         <Outlet />
       </div>
     </div>
