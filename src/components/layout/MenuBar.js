@@ -21,11 +21,11 @@ function MenuBar() {
         </NavbarBrand>
 
         <Collapse className="nav-collapse" navbar>
-          <Nav className="" navbar>
-            <NavItem>
-              <NavLink href="/components/">Student</NavLink>
-            </NavItem>
-          </Nav>
+          <Link to="/students">
+            <Nav navbar>
+              <NavItem className="nav-item">Students</NavItem>
+            </Nav>
+          </Link>
         </Collapse>
 
         <Nav horizontal="end" navbar>
