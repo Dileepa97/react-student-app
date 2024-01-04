@@ -1,7 +1,7 @@
 import React from "react";
 import { Form, Row, Col, FormGroup, Label, Input, Button } from "reactstrap";
 
-function SubTeacherDetails() {
+function AllocateTeacherDetails() {
   return (
     <>
       <Col md={6}>
@@ -20,4 +20,4 @@ function SubTeacherDetails() {
   );
 }
 
-export default SubTeacherDetails;
+export default AllocateTeacherDetails;
