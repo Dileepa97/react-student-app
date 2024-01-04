@@ -1,22 +1,22 @@
 import React from "react";
 import ContentBox from "../../components/common/ContentBox";
 import AllocateTeacherDetails from "../teacher/components/AllocateTeacherDetails";
-import AllocatedSubjects from "./components/AllocatedSubjects";
+import AllocatedClassRoom from "./components/AllocatedClassRoom";
 
-function AllocateSubject() {
+function AllocateClassRoom() {
   const TeacherDetailsComponent = () => <AllocateTeacherDetails />;
-  const AllocatedSubjectsComponent = () => <AllocatedSubjects />;
+  const AllocatedClassRoomComponent = () => <AllocatedClassRoom />;
 
   return (
     <div className="container">
       <ContentBox title="Teacher Details" child={<TeacherDetailsComponent />} />
 
       <ContentBox
-        title="Allocated Subjects"
-        child={<AllocatedSubjectsComponent />}
+        title="Allocated Class Rooms"
+        child={<AllocatedClassRoomComponent />}
       />
     </div>
   );
 }
 
-export default AllocateSubject;
+export default AllocateClassRoom;

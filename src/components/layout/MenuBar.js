@@ -50,6 +50,12 @@ function MenuBar() {
               <NavItem className="nav-item">Allocate Subjects</NavItem>
             </Nav>
           </Link>
+
+          <Link to="/allocate-class-rooms">
+            <Nav navbar>
+              <NavItem className="nav-item">Allocate Class Rooms</NavItem>
+            </Nav>
+          </Link>
         </Collapse>
 
         <Nav horizontal="end" navbar>
