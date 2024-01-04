@@ -56,6 +56,12 @@ function MenuBar() {
               <NavItem className="nav-item">Allocate Class Rooms</NavItem>
             </Nav>
           </Link>
+
+          <Link to="/student-reports">
+            <Nav navbar>
+              <NavItem className="nav-item">Student Reports</NavItem>
+            </Nav>
+          </Link>
         </Collapse>
 
         <Nav horizontal="end" navbar>
