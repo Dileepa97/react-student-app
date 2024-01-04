@@ -38,6 +38,12 @@ function MenuBar() {
               <NavItem className="nav-item">Teachers</NavItem>
             </Nav>
           </Link>
+
+          <Link to="/subjects">
+            <Nav navbar>
+              <NavItem className="nav-item">Subject</NavItem>
+            </Nav>
+          </Link>
         </Collapse>
 
         <Nav horizontal="end" navbar>
