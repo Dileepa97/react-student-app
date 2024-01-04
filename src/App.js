@@ -5,6 +5,7 @@ import Student from "./pages/student/Student";
 import ClassRoom from "./pages/classRoom/ClassRoom";
 import Teacher from "./pages/teacher/Teacher";
 import Subject from "./pages/subject/Subject";
+import AllocateSubject from "./pages/subject/AllocateSubject";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="class-rooms" element={<ClassRoom />} />
           <Route path="teachers" element={<Teacher />} />
           <Route path="subjects" element={<Subject />} />
+          <Route path="allocate-subjects" element={<AllocateSubject />} />
         </Route>
       </Routes>
     </BrowserRouter>
