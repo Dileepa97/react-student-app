@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.sass";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import Student from "./pages/student/Student";
