@@ -21,11 +21,47 @@ function MenuBar() {
         </NavbarBrand>
 
         <Collapse className="nav-collapse" navbar>
-          <Nav className="" navbar>
-            <NavItem>
-              <NavLink href="/components/">Student</NavLink>
-            </NavItem>
-          </Nav>
+          <Link to="/students">
+            <Nav navbar>
+              <NavItem className="nav-item">Students</NavItem>
+            </Nav>
+          </Link>
+
+          <Link to="/class-rooms">
+            <Nav navbar>
+              <NavItem className="nav-item">Class Rooms</NavItem>
+            </Nav>
+          </Link>
+
+          <Link to="/teachers">
+            <Nav navbar>
+              <NavItem className="nav-item">Teachers</NavItem>
+            </Nav>
+          </Link>
+
+          <Link to="/subjects">
+            <Nav navbar>
+              <NavItem className="nav-item">Subject</NavItem>
+            </Nav>
+          </Link>
+
+          <Link to="/allocate-subjects">
+            <Nav navbar>
+              <NavItem className="nav-item">Allocate Subjects</NavItem>
+            </Nav>
+          </Link>
+
+          <Link to="/allocate-class-rooms">
+            <Nav navbar>
+              <NavItem className="nav-item">Allocate Class Rooms</NavItem>
+            </Nav>
+          </Link>
+
+          <Link to="/student-reports">
+            <Nav navbar>
+              <NavItem className="nav-item">Student Reports</NavItem>
+            </Nav>
+          </Link>
         </Collapse>
 
         <Nav horizontal="end" navbar>
