@@ -18,6 +18,8 @@ function ClassRoomDetails() {
             </FormGroup>
           </Col>
 
+          <Col md={4}></Col>
+          <Col md={4}></Col>
           <Col md={8}>
             <div className="button-group-col">
               <Button className="button" color="success">
