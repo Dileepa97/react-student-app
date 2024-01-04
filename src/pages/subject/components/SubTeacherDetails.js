@@ -6,8 +6,8 @@ function SubTeacherDetails() {
     <>
       <Col md={6}>
         <FormGroup>
-          <Label for="teacher">Teacher</Label>
-          <Input id="teacher" name="teacher" type="select">
+          <Label for="teacher">Teacher *</Label>
+          <Input id="teacher" name="teacher" type="select" required>
             <option>1</option>
             <option>2</option>
             <option>3</option>

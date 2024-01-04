@@ -6,10 +6,10 @@ function AllocatedSubjects() {
     <>
       <Row>
         <Col md={1}>
-          <Label for="subject">Subject</Label>
+          <Label for="subject">Subject *</Label>
         </Col>
         <Col md={6}>
-          <Input id="subject" name="subject" type="select">
+          <Input id="subject" name="subject" type="select" required>
             <option>1</option>
             <option>2</option>
             <option>3</option>
