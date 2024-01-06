@@ -4,6 +4,11 @@ const initialState = {
     classRoomId: "",
     errors: {},
   },
+  subjectForm: {
+    subjectName: "",
+    subjectId: "",
+    errors: {},
+  },
 };
 
 const formReducer = (state = initialState, action) => {
