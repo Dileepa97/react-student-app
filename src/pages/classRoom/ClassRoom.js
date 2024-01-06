@@ -22,7 +22,7 @@ function ClassRoom() {
     }
 
     fetchClassRooms();
-  });
+  }, []);
 
   const ClassRoomDetailsComponent = () => <ClassRoomDetails />;
   const ExistingClassRoomsComponent = () => (
