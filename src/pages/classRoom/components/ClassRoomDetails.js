@@ -49,7 +49,7 @@ function ClassRoomDetails() {
       dispatch(resetForm("classRoomForm"));
       window.location.reload();
     } catch (error) {
-      console.error("Error creating classroom:", error);
+      console.error("Error deleting classroom:", error);
     }
   };
 

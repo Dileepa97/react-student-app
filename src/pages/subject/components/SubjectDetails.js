@@ -49,7 +49,7 @@ function SubjectDetails() {
       dispatch(resetForm("subjectForm"));
       window.location.reload();
     } catch (error) {
-      console.error("Error creating subject:", error);
+      console.error("Error deleting subject:", error);
     }
   };
 
