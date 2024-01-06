@@ -9,6 +9,14 @@ const initialState = {
     subjectId: "",
     errors: {},
   },
+  teacherForm: {
+    firstName: "",
+    lastName: "",
+    contactNo: "",
+    email: "",
+    id: "",
+    errors: {},
+  },
 };
 
 const formReducer = (state = initialState, action) => {
