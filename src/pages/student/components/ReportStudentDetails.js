@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Row, Col, FormGroup, Label, Input } from "reactstrap";
 import StudentApi from "../../../api/StudentApi";
 import { updateForm } from "../../../redux/actions/formActions";
 
 function ReportStudentDetails() {
   const dispatch = useDispatch();
+  const formData = useSelector((state) => state.form.studentReportForm);
 
   const studentApi = new StudentApi();
 
@@ -59,7 +60,7 @@ function ReportStudentDetails() {
               name="studentId"
               type="select"
               required
-              value={selectedStudentId}
+              value={formData.studentId}
               onChange={handleChange}
             >
               <option value="">Please select</option>
