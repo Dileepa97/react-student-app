@@ -28,6 +28,12 @@ const initialState = {
     id: "",
     errors: {},
   },
+  subjectAllocationForm: {
+    teacherId: "",
+    subjectId: "",
+    id: "",
+    errors: {},
+  },
 };
 
 const formReducer = (state = initialState, action) => {

@@ -62,6 +62,54 @@ class TeacherApi {
       throw error;
     }
   }
+
+  // Get not allocated subjects by teacher ID
+  async getnotAllocatedSubjectsByTeacherId(id) {
+    try {
+      const url = `/api/Teacher/not-allocated-subjects/${id}`;
+      const response = await this.api.get(url);
+      return response.data;
+    } catch (error) {
+      console.error("Error getting not allocated subjects data:", error);
+      throw error;
+    }
+  }
+
+  // Get allocated subjects by teacher ID
+  async getAllocatedSubjectsByTeacherId(id) {
+    try {
+      const url = `/api/Teacher/allocated-subjects/${id}`;
+      const response = await this.api.get(url);
+      return response.data;
+    } catch (error) {
+      console.error("Error getting allocated subjects data:", error);
+      throw error;
+    }
+  }
+
+  // Allocate a subject to a teacher
+  async allocateSubject(data) {
+    try {
+      const url = `/api/Teacher/allocated-subjects`;
+      const response = await this.api.post(url, data);
+      return response.data;
+    } catch (error) {
+      console.error("Error allocating a subject:", error);
+      throw error;
+    }
+  }
+
+  // Deallocate a subject from a teacher
+  async deallocateSubject(teacherId, subjectId) {
+    try {
+      const url = `/api/Teacher/${teacherId}/deallocate-subject/${subjectId}`;
+      const response = await this.api.delete(url);
+      return response.data;
+    } catch (error) {
+      console.error("Error deallocating a subject:", error);
+      throw error;
+    }
+  }
 }
 
 export default TeacherApi;
