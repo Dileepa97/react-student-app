@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { Label } from "reactstrap";
 import CustomTable from "../../../components/common/CustomTable";
 import StudentApi from "../../../api/StudentApi";
