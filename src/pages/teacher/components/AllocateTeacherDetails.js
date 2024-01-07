@@ -1,21 +1,60 @@
-import React from "react";
-import { Form, Row, Col, FormGroup, Label, Input, Button } from "reactstrap";
+import React, { useEffect, useState } from "react";
+import { Row, Col, Label, Input } from "reactstrap";
+import { useSelector, useDispatch } from "react-redux";
+import { updateForm } from "../../../redux/actions/formActions";
+import TeacherApi from "../../../api/TeacherApi";
 
 function AllocateTeacherDetails() {
+  const dispatch = useDispatch();
+  const formData = useSelector((state) => state.form.subjectAllocationForm);
+
+  const teacherApi = new TeacherApi();
+
+  const [teachers, setTeachers] = useState([]);
+
+  useEffect(() => {
+    async function fetchTeachers() {
+      try {
+        const data = await teacherApi.getAllTeachers();
+        setTeachers(data);
+      } catch (error) {
+        console.error("Error fetching teachers:", error);
+      }
+    }
+
+    fetchTeachers();
+  }, []);
+
+  const handleChange = (e) => {
+    dispatch(
+      updateForm("subjectAllocationForm", { [e.target.name]: e.target.value })
+    );
+  };
+
   return (
     <>
-      <Col md={6}>
-        <FormGroup>
+      <Row>
+        <Col md={2}>
           <Label for="teacher">Teacher *</Label>
-          <Input id="teacher" name="teacher" type="select" required>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+        </Col>
+        <Col md={6}>
+          <Input
+            id="teacher"
+            name="teacherId"
+            type="select"
+            required
+            value={formData?.teacherId}
+            onChange={handleChange}
+          >
+            <option value="">Please select</option>
+            {teachers.map((teacher) => (
+              <option key={teacher.id} value={teacher.id}>
+                {teacher.firstName} {teacher.lastName}
+              </option>
+            ))}
           </Input>
-        </FormGroup>
-      </Col>
+        </Col>
+      </Row>
     </>
   );
 }
