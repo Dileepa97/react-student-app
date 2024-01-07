@@ -4,7 +4,9 @@ import AllocateTeacherDetails from "../teacher/components/AllocateTeacherDetails
 import AllocatedClassRoom from "./components/AllocatedClassRoom";
 
 function AllocateClassRoom() {
-  const TeacherDetailsComponent = () => <AllocateTeacherDetails />;
+  const TeacherDetailsComponent = () => (
+    <AllocateTeacherDetails formName={"classRoomAllocationForm"} />
+  );
   const AllocatedClassRoomComponent = () => <AllocatedClassRoom />;
 
   return (

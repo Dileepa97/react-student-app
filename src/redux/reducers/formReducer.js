@@ -34,6 +34,12 @@ const initialState = {
     id: "",
     errors: {},
   },
+  classRoomAllocationForm: {
+    teacherId: "",
+    classRoomId: "",
+    id: "",
+    errors: {},
+  },
 };
 
 const formReducer = (state = initialState, action) => {

@@ -4,9 +4,17 @@ import { useSelector, useDispatch } from "react-redux";
 import { updateForm } from "../../../redux/actions/formActions";
 import TeacherApi from "../../../api/TeacherApi";
 
-function AllocateTeacherDetails() {
+function AllocateTeacherDetails({ formName }) {
   const dispatch = useDispatch();
-  const formData = useSelector((state) => state.form.subjectAllocationForm);
+
+  const formData = useSelector((state) => {
+    if (formName === "classRoomAllocationForm") {
+      return state.form.classRoomAllocationForm;
+    } else if (formName === "subjectAllocationForm") {
+      return state.form.subjectAllocationForm;
+    }
+    return null;
+  });
 
   const teacherApi = new TeacherApi();
 
@@ -26,9 +34,7 @@ function AllocateTeacherDetails() {
   }, []);
 
   const handleChange = (e) => {
-    dispatch(
-      updateForm("subjectAllocationForm", { [e.target.name]: e.target.value })
-    );
+    dispatch(updateForm(formName, { [e.target.name]: e.target.value }));
   };
 
   return (

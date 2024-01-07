@@ -4,7 +4,9 @@ import AllocateTeacherDetails from "../teacher/components/AllocateTeacherDetails
 import AllocatedSubjects from "./components/AllocatedSubjects";
 
 function AllocateSubject() {
-  const TeacherDetailsComponent = () => <AllocateTeacherDetails />;
+  const TeacherDetailsComponent = () => (
+    <AllocateTeacherDetails formName={"subjectAllocationForm"} />
+  );
   const AllocatedSubjectsComponent = () => <AllocatedSubjects />;
 
   return (
