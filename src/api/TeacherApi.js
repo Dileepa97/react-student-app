@@ -90,7 +90,7 @@ class TeacherApi {
   // Allocate a subject to a teacher
   async allocateSubject(data) {
     try {
-      const url = `/api/Teacher/allocated-subjects`;
+      const url = `/api/Teacher/allocate-subject`;
       const response = await this.api.post(url, data);
       return response.data;
     } catch (error) {
@@ -107,6 +107,54 @@ class TeacherApi {
       return response.data;
     } catch (error) {
       console.error("Error deallocating a subject:", error);
+      throw error;
+    }
+  }
+
+  // Get not allocated classrooms by teacher ID
+  async getnotAllocatedClassRoomsByTeacherId(id) {
+    try {
+      const url = `/api/Teacher/not-allocated-classrooms/${id}`;
+      const response = await this.api.get(url);
+      return response.data;
+    } catch (error) {
+      console.error("Error getting not allocated classrooms data:", error);
+      throw error;
+    }
+  }
+
+  // Get allocated classrooms by teacher ID
+  async getAllocatedClassRoomsByTeacherId(id) {
+    try {
+      const url = `/api/Teacher/allocated-classrooms/${id}`;
+      const response = await this.api.get(url);
+      return response.data;
+    } catch (error) {
+      console.error("Error getting allocated classrooms data:", error);
+      throw error;
+    }
+  }
+
+  // Allocate a classroom to a teacher
+  async allocateClassRoom(data) {
+    try {
+      const url = `/api/Teacher/allocate-classroom`;
+      const response = await this.api.post(url, data);
+      return response.data;
+    } catch (error) {
+      console.error("Error allocating a classroom:", error);
+      throw error;
+    }
+  }
+
+  // Deallocate a classroom from a teacher
+  async deallocateClassRooms(teacherId, subjectId) {
+    try {
+      const url = `/api/Teacher/${teacherId}/deallocate-classroom/${subjectId}`;
+      const response = await this.api.delete(url);
+      return response.data;
+    } catch (error) {
+      console.error("Error deallocating a classroom:", error);
       throw error;
     }
   }
