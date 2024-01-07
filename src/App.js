@@ -8,12 +8,14 @@ import Subject from "./pages/subject/Subject";
 import AllocateSubject from "./pages/subject/AllocateSubject";
 import AllocateClassRoom from "./pages/classRoom/AllocateClassRoom";
 import StudentReport from "./pages/student/StudentReport";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
           <Route path="students" element={<Student />} />
           <Route path="class-rooms" element={<ClassRoom />} />
           <Route path="teachers" element={<Teacher />} />

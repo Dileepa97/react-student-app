@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Collapse,
-  Navbar,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-} from "reactstrap";
+import { Collapse, Navbar, NavbarBrand, Nav, NavItem } from "reactstrap";
 import { Link } from "react-router-dom";
 import "./MenuBar.sass";
 import avatarImg from "../../assets/avatar.png";
@@ -15,10 +8,7 @@ function MenuBar() {
   return (
     <div>
       <Navbar className="nav-bar" expand={true} fixed="true">
-        <NavbarBrand href="/">
-          {" "}
-          <Link to="/">Student App </Link>
-        </NavbarBrand>
+        <NavbarBrand href="/"> Student App</NavbarBrand>
 
         <Collapse className="nav-collapse" navbar>
           <Link to="/students">
