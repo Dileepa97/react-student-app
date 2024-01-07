@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Student Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Student Management App, a web application built with React for student data management. This README provides a guide on how to run the project, information about the backend code, and the technologies used.
 
-## Available Scripts
+## How to Run
 
-In the project directory, you can run:
+Follow these simple steps to get the Student Management App up and running on your local machine:
 
-### `npm start`
+1. **Clone Repository:**
+   - Clone this repository to your local machine using the following command:
+     ```bash
+     git clone https://github.com/Dileepa97/react-student-app.git
+     ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Open Terminal:**
+   - Open a terminal window in the project directory.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Install Dependencies:**
+   - Run the following command to install the project dependencies:
+     ```bash
+     npm install
+     ```
 
-### `npm test`
+4. **Start the App:**
+   - After the completion of the package downloading, run the following command to start the app:
+     ```bash
+     npm start
+     ```
+   - The app will be accessible at [http://localhost:3000](http://localhost:3000) in your web browser.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Backend Code
 
-### `npm run build`
+The backend code for this project is hosted on GitHub. You can find it at the following repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Backend Repository](https://github.com/Dileepa97/dotnet-student-app)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Feel free to explore the backend code for a comprehensive understanding of the entire application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Used Technologies
 
-### `npm run eject`
+The Student Management App is built using the following technologies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **React:** A JavaScript library for building user interfaces.
+- **Redux:** A predictable state container for JavaScript apps.
+- **Axios:** A promise-based HTTP client for the browser and Node.js.
+- **React Router:** Declarative routing for React.js.
+- **Reactstrap:** Easy to use React Bootstrap 4 components.
+- **Sass:** A popular CSS preprocessor to enhance styling capabilities.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to report issues, or explore the codebase further! If you have any questions or suggestions, please don't hesitate to reach out. Happy coding!
