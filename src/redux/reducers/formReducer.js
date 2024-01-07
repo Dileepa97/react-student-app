@@ -17,6 +17,17 @@ const initialState = {
     id: "",
     errors: {},
   },
+  studentForm: {
+    firstName: "",
+    lastName: "",
+    contactPerson: "",
+    contactNo: "",
+    email: "",
+    birthDate: "",
+    classRoomId: "",
+    id: "",
+    errors: {},
+  },
 };
 
 const formReducer = (state = initialState, action) => {
