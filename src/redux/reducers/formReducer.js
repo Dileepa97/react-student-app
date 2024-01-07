@@ -40,6 +40,10 @@ const initialState = {
     id: "",
     errors: {},
   },
+  studentReportForm: {
+    studentId: "",
+    classRoomId: "",
+  },
 };
 
 const formReducer = (state = initialState, action) => {

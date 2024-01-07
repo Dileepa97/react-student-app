@@ -62,6 +62,17 @@ class StudentApi {
       throw error;
     }
   }
+
+  // Get a Student report data by classroom ID
+  async getStudentReportDataByClassRoomId(id) {
+    try {
+      const response = await this.api.get(`/api/Student/report-details/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error("Error getting Student report data:", error);
+      throw error;
+    }
+  }
 }
 
 export default StudentApi;
